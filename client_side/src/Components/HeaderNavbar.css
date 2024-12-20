@@ -1,0 +1,105 @@
+@keyframes slideInAndRotate {
+  from {
+    transform: translateY(-50px) rotate(-5deg);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0) rotate(0);
+    opacity: 1;
+  }
+}
+
+/* Apply the animation to the entire header-navbar */
+.header-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgb(202, 175, 199);
+  /* border: 2px solid blue; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background-color: rgba(255, 255, 255, 1);
+  color: black;
+  animation: slideInAndRotate 0.8s ease; /* Adjust duration and timing function as needed */
+}
+
+/* Styles for the dropdown toggle button */
+.header-navbar .dropdown-toggle {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  /* border: 2px solid red; */
+  color: black;
+}
+.header-navbar .dropdown-profile{
+  /* border: 2px solid greenyellow; */
+  /* width: 200px; */
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0px 10px;
+  
+}
+.header-navbar .dropdown-profile h4{
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  
+}
+.header-navbar .dropdown-profile h4 span{
+  color: orange;
+}
+.header-navbar .dropdown-profile .current-user{
+  /* border: 2px solid blue; */
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0px 10px;
+}
+.header-navbar .dropdown-profile span{
+  font-size: 10px;
+  color: grey;
+}
+/* Styles for the dropdown menu */
+.header-navbar .dropdown-menu {
+  min-width: 160px;
+  background-color: rgb(48, 25, 47);
+  color: #fff;
+  
+}
+
+/* Styles for dropdown items */
+.header-navbar .dropdown-item {
+  padding: 8px 16px;
+  color: #fff;
+}
+
+/* Styles for dropdown dividers */
+.header-navbar .dropdown-divider {
+  margin: 4px 0;
+  background-color: #36393b;
+  border-color: #fff;
+}
+
+/* Styles for the title in the header */
+.header-title {
+  font-size: 18px;
+  margin: 0 auto;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .header-navbar {
+    justify-content: center;
+  }
+  .header-title {
+    font-size: 16px;
+  }
+}

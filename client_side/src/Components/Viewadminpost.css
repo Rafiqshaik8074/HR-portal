@@ -1,0 +1,42 @@
+/* Keyframe animation for fade-in effect */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Apply the animation to the entire custom-table */
+.custom-table {
+  margin: 20px auto;
+  max-width: 600px;
+  animation: fadeIn 0.8s ease; /* Adjust duration and timing function as needed */
+}
+
+.custom-header {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  padding: 10px;
+}
+
+.custom-label {
+  font-weight: bold;
+}
+
+.highlight-row {
+  background-color: #f5f5f5;
+}
+
+/* Additional styles for buttons */
+.custom-table button {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.custom-table button:hover {
+  background-color: #28a745; /* Change the background color on hover */
+  color: white; /* Change the text color on hover */
+}

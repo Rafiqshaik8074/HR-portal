@@ -1,0 +1,166 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+#username {
+/* border: 2px solid red; */
+/* background-color: #f8f9fa; */
+/* background-color: red; */
+display: flex;
+}
+#username .right-container {
+height: 100vh;
+width: 50%;
+/* border: 1px solid black; */
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+
+
+}
+#username .right-container img {
+width: 80%;
+position: relative; /* For shadow or pseudo-elements */
+animation: up-down2 3s ease-in-out infinite; /* Infinite up-down effect */
+transform-origin: center; /* Keep the effect centered */
+perspective: 1000px; /* Add perspective for 3D rotation */
+
+transform: rotateX(10deg) rotateY(10deg); /* Initial 3D tilt */
+}
+
+@keyframes up-down2 {
+  0% {
+    transform:translateY(10px) rotateX(5deg) rotateY(5deg); /* Down with slight tilt */
+  }
+  50% {
+    transform:translateY(-10px) rotateX(-5deg) rotateY(-5deg); /* Up with reverse tilt */
+  }
+  100% {
+    transform:translateY(10px) rotateX(5deg) rotateY(5deg); /* Reset to initial */
+  }
+}
+
+
+/* General container styles */
+#username .container-wrapper {
+
+display: flex;
+align-items: center;
+justify-content: center;
+/* border: 1px solid blue; */
+height: 100vh;
+width: 50%;
+/* background-color: #f8f9fa; */
+/* background-color: green; */
+
+}
+
+#username .content-wrapper {
+height: 90%;
+width: 80%;
+/* border: 2px solid purple; */
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+}
+
+/* Card styles */
+#username .card-container {
+height: 90%;
+min-width: 300px;
+width: 80%;
+background: #fff;
+border-radius: 8px;
+padding: 20px;
+/* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); */
+box-shadow: 0px 4px 10px rgba(128, 128, 128, 0.5);
+/* border: 2px solid yellow; */
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+}
+
+#username .card-title {
+font-size: 35px;
+font-weight: bold;
+font-family: Arial, Helvetica, sans-serif;
+text-transform: uppercase;
+color: rgb(108,99,255);
+}
+
+#username .card-subtitle {
+font-size: 16px;
+color: #6c757d;
+}
+
+/* Form styles */
+#username .form-container {
+height: 50%;
+width: 90%;
+/* border: 2px solid yellow; */
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-evenly;
+
+}
+
+#username .profile-wrapper {
+margin-bottom: 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+/* border: 2px solid blue; */
+}
+
+#username .profile-image {
+width: 100px;
+height: 100px;
+border-radius: 50%;
+object-fit: cover;
+/* border: 2px solid black; */
+}
+
+#username .form-input {
+width: 90%;
+padding: 10px;
+border: 1px solid #ced4da;
+border-radius: 5px;
+
+}
+#username .form-input:focus{
+outline: 2px solid rgb(108,99,255);
+}
+
+#username .form-button {
+width: 90%;
+background-color: rgb(108,99,255);
+color: #fff;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+#username .form-button:hover {
+background-color: #218838;
+}
+
+#username .recovery-container{
+  height: 40px;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid blue; */
+
+}
+#username .recovery-container a{
+  color: rgb(108,99,255)
+}

@@ -1,0 +1,214 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#container{
+    height: 100vh;
+    width: 100%;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+
+
+
+
+
+
+#container .main-part{
+    height: 85%;
+    width: 90%;
+    /* border: 2px solid yellow; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+#container .left-part{
+    height: 100%;
+    width: 50%;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#container .left-part img{
+    height: 90%;
+    width: 90%;
+    /* border: 2px solid black; */
+    object-fit: contain;
+    
+    
+
+}
+#container .right-part{
+    height: 100%;
+    width: 50%;
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    padding-left: 20px;
+
+    
+    
+}
+
+#container .right-part h1{
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    
+}
+#container .right-part p{
+    /* color: rgba(0, 0, 0, 0.705); */
+    width: 70%;
+}
+#container .otp{
+    color: rgb(28,69,133);
+}
+#container .otp h2{
+    color: rgb(28,69,133);
+}
+#container .otp p{
+    color:rgb(102,131,171);
+}
+#container .right-part #un{
+    height: 40px;
+    width: 60%;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid rgba(0, 0, 255, 0.438);
+}
+
+#container .right-part #un::placeholder{
+    /* color: rgb(177, 177, 177); */
+    color: rgba(0, 0, 255, 0.438);
+}
+#container .right-part button{
+    height: 40px;
+    width: 60%;
+    background-color: orangered;
+    border: none;
+    color: white;
+    border-radius: 10px;
+}
+#container .right-part a{
+    text-decoration: none;
+    height: 40px;
+    width: 60%;
+    /* border: 2px solid red; */
+    text-align: center;
+    align-content: center;
+    color: grey;
+    /* background-color: blue; */
+}
+#container .right-part a:hover{
+    color: blue;
+}
+
+#container .right-part .otp-verify{
+    border: 2px solid blue;
+}
+
+#container .right-part .otp-input{
+    /* border: 2px solid red; */
+    height: 70px;
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+#container .right-part .otp-input input{
+    height: 90%;
+    width: 15%;
+    text-align: center;
+    font-size: 25px;
+    background-color: transparent;
+    border-radius: 15px;
+    border: 1px solid rgb(28,69,133);
+    font-weight: bold;
+    
+    outline: none;
+}
+
+
+/* Hide number spinner controls for Webkit browsers (Chrome, Safari) */
+#container .right-part .otp-input input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+
+
+
+#container .right-part .otp-input input:focus{
+    box-shadow: 0px 0px 2px orangered, 0px 0px 2px orangered inset;
+    border: 2px solid orangered;
+    background-color: white;
+    color: orangered;
+}
+#container .right-part .verify{
+    background-color: orangered;
+    width: 70%;
+}
+
+#container .right-part .resend-otp{
+    font-weight: bold;
+    color: orangered;
+    font-size: 16px;
+}
+#container .right-part .resend-otp:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+#container .right-part .otp-login-link{
+    width: 70%;
+}
+
+
+@media (min-width: 220px) and (max-width: 480px) {
+  #container{
+    /* height: calc(var(--vh, 1vh) * 100); */
+    height: 100%;
+  }
+    #container .main-part{
+       /* background-color: red; */
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+       align-items: center;
+    }
+    #container .main-part .left-part{
+        height: 35%;
+        width: 80%;
+        /* border: 2px solid blue; */
+    }
+    #container .main-part .right-part{
+        /* border: 2px solid white; */
+        height: 45%;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0;
+    }
+    #container .main-part .right-part input,button,a{
+        width: 90% !important;
+        /* border: 2px solid white; */
+    }
+    
+  }

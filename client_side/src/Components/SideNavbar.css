@@ -1,0 +1,77 @@
+.side-navbar {
+  width: 222px;
+  height: 100vh;
+  padding: 20px;
+  position: fixed;
+  left: 0;
+  top: 57px;
+  border-top-right-radius: 5px;
+  color: white;
+  background-color: rgb(27, 39, 42);
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+  transition: width 0.3s ease;
+  animation: changeBackgroundColor 5s infinite; /* Apply the animation */
+}
+
+@keyframes changeBackgroundColor {
+  0% {
+    background-color: rgb(27, 39, 42); /* Initial background color */
+  }
+  25% {
+    background-color: rgb(34, 47, 54); /* Change to a different color at 25% */
+  }
+  50% {
+    background-color: rgb(27, 35, 45); /* Change to another color at 50% */
+  }
+  75% {
+    background-color: rgb(37, 49, 64); /* Change to yet another color at 75% */
+  }
+  100% {
+    background-color: rgb(39, 31, 46); /* Return to the initial color at 100% */
+  }
+}
+
+.side-navbar .row {
+  margin-bottom: 10px;
+}
+
+.side-navbar .nav-link-row {
+  flex-direction: column;
+}
+
+.side-navbar .nav-link-title {
+  font-weight: bold;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.side-navbar .nav-link {
+  color: white;
+}
+
+.side-navbar .nav-link-icon {
+  margin-right: 5px;
+}
+
+.side-navbar .nav-link:hover {
+  color: rgb(19, 211, 192);
+  background-color: rgb(8, 31, 41);
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .side-navbar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 0;
+    border-radius: 0;
+  }
+  .side-navbar .nav-link-row {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .side-navbar .nav-link-icon {
+    margin-right: 0;
+  }
+}

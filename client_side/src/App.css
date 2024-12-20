@@ -1,0 +1,54 @@
+.App1{
+
+    text-align: center;
+    padding-top: 25px;
+    margin-top: 2%;
+    
+}
+.communal-chatbox-heading {
+    color: #f7d185; /* Light pink color */
+  font-size: 24px;  /* Adjust the font size as needed */
+    /* Add any other styles you want */
+  }
+.message-left{
+    background: aliceblue;
+    border-radius: 25px;
+    padding: .5em 1em !important;
+    margin: 1em;
+}
+.message-text{
+    font-size: 17px;
+    padding: 10px;
+}
+
+.logo-icon{
+    height: 50px;
+    width: 50px;
+    border-radius: 200px;
+}
+
+.message-right{
+    background: #91fbff;
+    border-radius: 25px;
+    padding: .5em 1em !important;
+    margin: 1em;
+
+}
+
+.chat-message{
+    background-color: #f2f2f2;
+    padding: 1em;
+    max-height: 450px;
+    overflow-y:auto;
+    border-radius: 25px;
+    color: gray;
+    align-items: flex-end;
+}
+
+.message-firstname {
+    font-size: 12px; /* Adjust the font size as needed */
+    height: 50px;
+    width: 50px;
+   padding-left: 20px;
+  }
+  

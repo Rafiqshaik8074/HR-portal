@@ -1,0 +1,36 @@
+.container-wrapper {
+  background-image: url('../assets/login1.jpg'); /* Replace 'background.jpg' with the actual image file name and path */
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* Additional properties to control the background image appearance */
+}
+
+
+.card-container {
+  background-color: #f8f9fa; /* Set your desired background color */
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(71, 71, 71, 0.11);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.title {
+  font-family: 'Poppins', sans-serif,bold; /* Set the font family to Poppins */
+  font-weight: bold;
+  color: green;
+}
+
+.custom-button {
+  background-color: #32e2f2;
+  color: white;
+  width: 150px; 
+}
+
+.custom-button:hover {
+  background-color: rgb(146, 71, 199);
+}
+
+
+
+
+
+

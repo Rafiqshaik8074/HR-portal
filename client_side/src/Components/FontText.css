@@ -1,0 +1,96 @@
+.custom-text {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    /* Additional text styles */
+    /* Example: text-decoration: underline; */
+  }
+
+  .custom-font {
+    font-family: Arial, sans-serif;
+    font-size: 24px; /* Adjust the font size as needed */
+    /* Additional font styles can be added here */
+  }
+  
+  /* Add styles for your header title */
+  .header-title {
+    font-size: 24px; /* Increase the font size for the header title */
+    font-weight: bold; /* Make it bold */
+  }
+
+  /* Define a CSS class for the font style and size */
+.custom-font {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+  }
+  
+  .table-header {
+    font-size: 16px; /* Increase the font size for table headers */
+    font-weight: bold; /* Make them bold */
+  }
+  
+  /* Apply a custom font to specific elements */
+  .custom-font h3 {
+    font-size: 20px; /* Adjust the font size for headings within the custom font class */
+    font-weight: bold; /* Make them bold */
+  }
+
+  /* Define a CSS class for the font style and size */
+.custom-font {
+    font-family: Arial, sans-serif;
+    font-size: 16px; /* Adjust the font size as needed */
+    /* Additional font styles can be added here */
+  }
+  
+  /* Add styles for your header and form elements */
+  .header-title {
+    font-size: 24px; /* Increase the font size for the header title */
+    font-weight: bold; /* Make it bold */
+  }
+  
+  /* Apply custom font to specific elements */
+  .custom-font h3 {
+    font-size: 20px; /* Adjust the font size for headings within the custom font class */
+  }
+  
+  /* Style the form inputs */
+  .custom-font .form-control {
+    font-size: 16px; /* Adjust the font size for form inputs */
+  }
+  
+  /* Style buttons */
+  .custom-font .btn {
+    font-size: 16px; /* Adjust the font size for buttons */
+  }
+
+  .bold-text {
+    font-weight: bold;
+    font-size: 18px; 
+    font-family: Arial, sans-serif;
+  }
+  .custom-placeholder-style::placeholder {
+    text-align: center;
+    font-weight: bolder;
+    color: darkslategray;
+  }
+
+  /* Define a keyframe animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Apply the animation to specific elements */
+.custom-font,
+.custom-font h3,
+.custom-font .form-control,
+.custom-font .btn,
+.bold-text,
+.custom-placeholder-style::placeholder {
+  animation: fadeIn 0.5s ease; /* Adjust duration and timing function as needed */
+}
